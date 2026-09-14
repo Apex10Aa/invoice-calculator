@@ -74,6 +74,29 @@ body {
   background: #c9a26d66;
 }
 
+/* Cream form: force dark typed text (body foreground is light for the studio shell). */
+.gem-form input,
+.gem-form textarea,
+.gem-form select {
+  color: #171412;
+  caret-color: #171412;
+}
+
+.gem-form input::placeholder,
+.gem-form textarea::placeholder {
+  color: #7a6b5c;
+  opacity: 1;
+}
+
+.gem-form input[type="date"] {
+  color-scheme: light;
+}
+
+.gem-form input[type="date"]::-webkit-datetime-edit,
+.gem-form input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+  color: #171412;
+}
+
 .preview-stage {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, transparent 100%);
   border: 1px solid rgba(255, 255, 255, 0.06);

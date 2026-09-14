@@ -182,7 +182,7 @@ export function InvoiceWorkspace() {
             value={invoice.client}
             onChange={(event) => patch({ client: event.target.value })}
             placeholder="Hope"
-            className="mt-2 w-full border-0 border-b border-[#c9a26d] bg-transparent pb-2 text-xl outline-none placeholder:text-[#c3b7aa]"
+            className="mt-2 w-full border-0 border-b border-[#c9a26d] bg-transparent pb-2 text-xl text-[#171412] outline-none placeholder:text-[#7a6b5c]"
           />
         </label>
 
@@ -195,7 +195,7 @@ export function InvoiceWorkspace() {
               type="date"
               value={invoice.dateIssued}
               onChange={(event) => patch({ dateIssued: event.target.value })}
-              className="mt-2 w-full border-0 border-b border-[#c9a26d] bg-transparent pb-2 text-base outline-none"
+              className="mt-2 w-full border-0 border-b border-[#c9a26d] bg-transparent pb-2 text-base text-[#171412] outline-none"
             />
           </label>
           <label>
@@ -206,7 +206,7 @@ export function InvoiceWorkspace() {
               value={invoice.delivery}
               onChange={(event) => patch({ delivery: event.target.value })}
               placeholder="2 weeks"
-              className="mt-2 w-full border-0 border-b border-[#c9a26d] bg-transparent pb-2 text-base outline-none placeholder:text-[#c3b7aa]"
+              className="mt-2 w-full border-0 border-b border-[#c9a26d] bg-transparent pb-2 text-base text-[#171412] outline-none placeholder:text-[#7a6b5c]"
             />
           </label>
         </div>
@@ -219,7 +219,7 @@ export function InvoiceWorkspace() {
             value={invoice.orderTitle}
             onChange={(event) => patch({ orderTitle: event.target.value })}
             placeholder="Optional — Back to School Dress"
-            className="mt-2 w-full border-0 border-b border-[#c9a26d] bg-transparent pb-2 text-base outline-none placeholder:text-[#c3b7aa]"
+            className="mt-2 w-full border-0 border-b border-[#c9a26d] bg-transparent pb-2 text-base text-[#171412] outline-none placeholder:text-[#7a6b5c]"
           />
         </label>
 
@@ -250,7 +250,7 @@ export function InvoiceWorkspace() {
                   patch({ items: resizeItems(invoice.items, n) });
                 }
               }}
-              className="mt-2 w-full border-0 border-b border-[#c9a26d] bg-transparent pb-2 text-2xl outline-none"
+              className="mt-2 w-full border-0 border-b border-[#c9a26d] bg-transparent pb-2 text-2xl text-[#171412] outline-none"
             />
           </label>
           <p className="pb-2 text-sm tracking-[0.08em] text-[#9a7043] uppercase">
@@ -273,7 +273,7 @@ export function InvoiceWorkspace() {
                   updateItem(item.id, "description", event.target.value)
                 }
                 placeholder="Shirt"
-                className="mt-2 w-full border-0 bg-transparent text-lg outline-none placeholder:text-[#c3b7aa]"
+                className="mt-2 w-full border-0 bg-transparent text-lg text-[#171412] outline-none placeholder:text-[#7a6b5c]"
               />
               <div className="mt-3 grid grid-cols-2 gap-4">
                 <label>
@@ -287,7 +287,7 @@ export function InvoiceWorkspace() {
                     onChange={(event) =>
                       updateItem(item.id, "qty", event.target.value)
                     }
-                    className="mt-1 w-full border-0 border-b border-[#d7c4ae] bg-transparent pb-1 outline-none"
+                    className="mt-1 w-full border-0 border-b border-[#d7c4ae] bg-transparent pb-1 text-[#171412] outline-none"
                   />
                 </label>
                 <label>
@@ -302,7 +302,7 @@ export function InvoiceWorkspace() {
                       updateItem(item.id, "rate", event.target.value)
                     }
                     placeholder="10,000"
-                    className="mt-1 w-full border-0 border-b border-[#d7c4ae] bg-transparent pb-1 outline-none tabular-nums"
+                    className="mt-1 w-full border-0 border-b border-[#d7c4ae] bg-transparent pb-1 text-[#171412] outline-none tabular-nums placeholder:text-[#7a6b5c]"
                   />
                 </label>
               </div>

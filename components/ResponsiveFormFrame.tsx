@@ -29,7 +29,7 @@ export function ResponsiveFormFrame({ children }: ResponsiveFormFrameProps) {
             </span>
             <span className="text-[10px] text-[#b5a896]">9:41</span>
           </div>
-          <div className="form-scroll flex-1 px-5 py-6 lg:overflow-y-auto lg:overscroll-contain lg:px-5 lg:pb-8 lg:pt-4">
+          <div className="form-scroll gem-form flex-1 px-5 py-6 lg:overflow-y-auto lg:overscroll-contain lg:px-5 lg:pb-8 lg:pt-4">
             {children}
           </div>
         </div>
